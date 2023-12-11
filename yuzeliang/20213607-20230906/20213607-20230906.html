@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux学习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        li {
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="biaoti">余泽亮的学习</h1>
+    <div>
+        <h3>以下为我的一些笔记</h3>
+        <hr>
+        <ol>
+            <li>
+                1、ls命令说明:<br>
+                就是 list 的缩写，通过 ls 命令不仅可以查看 linux 文件夹包含的文件，<br>
+                而且可以查看文件权限(包括目录、文件夹、文件权限)查看目录信息等等。
+            </li>
+            <li>2、cd 命令 cd(changeDirectory) <br>
+                命令语法:cd [目录名]<br>
+                说明：切换当前目录至 dirName。<br>
+            </li>
+            <li>3、pwd 命令<br>
+                pwd 命令用于查看当前工作目录路径。<br>
+            </li>
+            <li>4、mkdir 命令<br>
+                mkdir 命令用于创建文件夹。<br>
+                可用选项：<br>
+                -m: 对新建目录设置存取权限，也可以用 chmod 命令设置;<br>
+                -p: 可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后，系统将自动建立好那些尚不在的目录，即一次可以建立多个目录。<br>
+            </li>
+            <li>
+                5、rm 命令<br>
+                删除一个目录中的一个或多个文件或目录，如果没有使用 -r 选项，则 rm 不会删除目录。如果使用 rm 来删除文件，通常仍可以将该文件恢复原状。<br>
+                rm [选项] 文件…<br>
+            </li>
+            <li>6、rmdir 命令<br>
+                从一个目录中删除一个或多个子目录项，删除某目录时也必须具有对其父目录的写权限。<br>
+                注意：不能删除非空目录<br>
+            </li>
+            <li>7、mv 命令<br>
+                移动文件或修改文件名，根据第二参数类型（如目录，则移动文件；如为文件则重命令该文件）。<br>
+                当第二个参数为目录时，第一个参数可以是多个以空格分隔的文件或目录，然后移动第一个参数指定的多个文件到第二个参数指定的目录中。<br>
+            </li>
+            <li>
+                8、cp 命令<br>
+                将源文件复制至目标文件，或将多个源文件复制至目标目录。<br>
+                注意：命令行复制，如果目标文件已经存在会提示是否覆盖，而在 shell 脚本中，如果不加 -i 参数，则不会提示，而是直接覆盖！<br>
+            </li>
+        </ol>
+        <a href="20213607-2023.9.6.txt" target="_blank" download="filename.txt">
+            <p>——>点击此处下载我的学习历程</p>
+        </a>
+    </div>
+</body>
+
+</html>

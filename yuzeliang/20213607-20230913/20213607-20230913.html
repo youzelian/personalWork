@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20213609余泽亮</title>
+</head>
+
+<body>
+    <h1>标题:Linux的tar命令</h1>
+    <h2>简介:</h2>
+    <p>下载videoClips文件到个人文件夹中，用linux命令解包、删除包文件、列出解包的文件并用浏览器播放解包的视频</p>
+    <div>
+        <h2>命令</h2>
+        <ul>
+            <li>
+                解包命令:tar -xf videoClips<br>
+                解析解包命令:tar -[主选项+辅选项] 文件或者目录,主选项是必须要有的，它告诉tar要做什么事情，辅选项是辅助使用的，可以选用。<br>
+                x:从文件包中释放文件，相当于解析包<br>
+                f:指定压缩包名称<br>
+            </li>
+            <li>
+                删包命令:rm videoClips<br>
+                可能会出现的选项:rm: remove write-protected regular file 'videoClips'?————这是删除保护文件夹的询问选项<br>
+                输入y即可
+            </li>
+            <li>
+                列文件夹命令:ls<br>
+                1.先转到videoMP4文件夹——cd videoMP4<br>
+                2.列出文件夹中的文件——ls
+            </li>
+            <li>
+                用浏览器播放视频文件命令:<br>
+                #!/bin/sh<br>
+                "你的浏览器地址\chrome.exe" '你要打开的文件的地址'$1<br>
+                例如:<br>
+                #!/bin/sh<br>
+                $ "C:\Program Files
+                (x86)\Microsoft\Edge\Application\msedge.exe"'C:\Users\Administrator\yuZeLiang\videoMP4\funDogs.mp4'$1
+            </li>
+        </ul>
+    </div>
+    <h2>总结:</h2>
+    <p>
+        linux命令学习需要系统性地学习,看完书也要梳理一遍整体思路。<br>
+        由于一些习惯性的windows操作，我们会对linux学习产生一些困扰，但是这些都是我们需要面对的，问题就在那里，需要解决而不是逃避<br>
+        在这几次的课堂练习中，我学习到了许多linux命令，例如cd、ls、mkdir、rm、cat...等等命令，所谓抛砖引玉，我们的学习应该在更多的课堂外中学习，而不是单单课堂上的学习
+    </p>
+</body>
+
+</html>

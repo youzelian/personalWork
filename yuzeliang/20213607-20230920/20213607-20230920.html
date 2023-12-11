@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux学习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            background-color: aliceblue;
+            text-align: center;
+            width: auto;
+            border: 1px solid black;
+        }
+
+        ul li {
+            display: inline;
+            list-style: none;
+        }
+
+        ul li button {
+            font-size: large;
+            width: 100px;
+            height: 60px;
+            margin: 3em;
+        }
+    </style>
+    <script>
+        function myfunction1() {
+            document.getElementById("word").src = "my_txt/science.txt";
+        }
+        function myfunction2() {
+            document.getElementById("word").src = "my_txt/teach.txt";
+        }
+        function myfunction3() {
+            document.getElementById("word").src = "my_txt/soft.txt";
+        }
+        function myfunction4() {
+            document.getElementById("word").src = "my_txt/web.txt";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>中国公司分类</h1>
+    <div>
+        <ul>
+            <li><button type="button" onclick="myfunction1()">科技公司</button></li>
+            <li><button type="button" onclick="myfunction2()">教育公司</button></li>
+            <li><button type="button" onclick="myfunction3()">软件公司</button></li>
+            <li><button type="button" onclick="myfunction4()">网络公司</button></li>
+        </ul>
+    </div>
+    <h2>正文:</h2>
+    <iframe id="word" src="" width="500" height="500"></iframe>
+    <a href="https://www.scsltjt.com/">四川旅投教育投资有限责任公司</a>
+
+</body>
+
+</html>
