@@ -17,7 +17,7 @@
 
         body {
             text-align: center;
-            background-image: url("https://tse1-mm.cn.bing.net/th/id/R-C.1389171a70009ec8b098105b6e32f1cd?rik=iowF51I0jztnTg&riu=http%3a%2f%2fwww.qqaiqin.com%2fuploads%2fallimg%2f130918%2f4-13091R1563DH.jpg&ehk=8jCPDYLIexQaSIslCmjT1EFoAySyAJM7vTqTLkSulro%3d&risl=&pid=ImgRaw&r=0");
+            background-image: url("https://img.zcool.cn/community/015b315c73bb4ba801203d22796b80.jpg");
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -52,6 +52,7 @@
 
         nav {
             height: 25%;
+            line-height: 25%;
         }
 
         article {
@@ -60,13 +61,13 @@
         }
 
         input {
-            width: 6%;
-            margin: 2px;
+            width: 10%;
+            margin: 20px;
             box-shadow: 2px 2px 2px gray;
-            background-color: #b490b8;
+            background-color: #b7cce1;
             border: none;
             border-radius: 25px;
-            font-size: 0.5em;
+            font-size: 1.0em;
             color: black;
             outline: none;
             cursor: pointer;
@@ -112,7 +113,7 @@
         var Article = document.getElementById('Article');
 
         // var homeworkcontent = ['第一次作业做的是一个对端午节的由来以及端午节为了纪念什么的介绍', '第二次作业是关于电影的介绍和推荐，主要使用了html中的表格', '第三次作业是个人简介，里面主要是对我的一些简短的介绍，使用了图片背景颜色和form表单等html,css标签', '第四次作业是自己写的一个王者的简陋页面，里面包含了背景颜色半透明的css和a标签的爱恨原则等基本html和css', '第五次作业讲的是李白的一首诗，通过按钮点击来实现一句一句诗的呈现，使用了input:button的onclick点击功能', '第六次作业是第四次作业的进阶版，将300首诗通过按钮实现上一首下一首的功能此时主要的功能由js来实现，抓取html中两个标题和五个p标签再将字符串中的一首首诗分成标题和内容分别赋给它们相应的值', '第七次作业是第六次作业的改进，暂时部分解决了古诗只能由七行的问题，这是通过减少标题标签和p标签而将标题部分和内容部分分开实现', '第八次作业是进一步的改进，将300首诗字符串进行修改和300首诗的闭合循环实现', '第九次作业补全了300首诗闭合循环的bug和css的进一步修改', '第十次作业是300首诗的最后修正版，删除了html中body里面的p标签，而在js中使用createElement动态创建p标签，有多少行就有多少p标签。完美解决了300首诗闭合循环。增加新的功能rand随机按钮，点击随机呈现一首古诗', '第十一次作业是计算器，使用大量js语言进行编写，其中主要的程序是两个嵌套的for循环动态创建4个div，每个div包含4个按钮，共16个按钮。以及数个特殊的按钮功能function的实现', '第十二次是考试，计算器的进一步改进，其中补全了许多bug也加了键盘事件(即小键盘上也能计算)', '第十三次也是考试，计算器的最终版。解决了计算次数只有一次和计算时小数计算出现bug的问题。实现了计算的算式和结果的同时呈现，同时修改了css使得页面更好看'];
-        var homeworkcontent = ['第一次作业', '第二次作业', '第三次作业', '第四次作业', '第五次作业'];
+        var homeworkcontent = ['关于Linux的简单命令学习，如ls、cd、pwd、mkdir、mv等命令', '学习关于Linux的tar解压缩包命令', '用Linux命令完成对关键词的检索查询', 'Linux的ping、tracert、cut、curl命令的学习', '首次实现页面上播放视频', '第六次作业添加了logo标签显示播放到第几个视频', '第七次作业添加了视频时间', '第八次作业兼并期末作业，完成了切换媒体，可播放音频文件并显示音频文件的可点击目录的按钮'];
         //var homeworksrc = ['yuzeliang/20213607-1.html', 'yuzeliang/20213607-2.html', 'yuzeliang/20213607-3.html', 'yuzeliang/20213607-4.html', 'yuzeliang/20213607-5.html', 'yuzeliang/20213607-6.html', 'yuzeliang/20213607-7.html', 'yuzeliang/20213607-8.html', 'yuzeliang/20213607-9.html', 'yuzeliang/20213607-10.html', 'yuzeliang/20213607-11.html', 'yuzeliang/20213607-12.html', 'yuzeliang/20213607-13.html', 'yuzeliang/20213607-14.html', 'yuzeliang/20213607-15.html', 'yuzeliang/20213607-16.html'];
         var homeworksrc = ['yuzeliang/20213607-20230906/20213607-20230906.html', 'yuzeliang/20213607-20230913/20213607-20230913.html', 'yuzeliang/20213607-20230920/20213607-20230920.html', 'yuzeliang/20213607-20230927/20213607-20230927.html', 'yuzeliang/20213607-20231011/20213607-20231011.html', 'yuzeliang/20213607-20231025/20213607-20231025.html', 'yuzeliang/20213607-20231108/20213607-20231108.html', 'yuzeliang/ks/ks.html'];
         function showDom() {
